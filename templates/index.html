@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/612f542d54.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Allan&family=Anton&family=Bebas+Neue&family=Courgette&family=Imbue&family=Kaushan+Script&family=Lobster&family=Nova+Square&family=Oswald:wght@300;400&family=PT+Sans+Narrow&family=Pathway+Gothic+One&family=Poppins&family=Potta+One&family=Righteous&family=Roboto:wght@300;400&family=Squada+One&family=Teko:wght@300;400&family=Trade+Winds&family=Yanone+Kaffeesatz:wght@400;500&family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Journey to the west</title>
+</head>
+<body>
+    <header>
+        <h1>Journey to The West</h1>
+    </header>
+    <main>
+        <h3>{{ data[1] }}</h3>
+        <aside>
+            {{ data[0] | safe }}
+            <footer>
+                <a href="/chapter/{{data[2]}}"><< Chapter {{data[2]}} </a>
+                <a href="/chapter/{{data[3]}}">Chapter {{data[3]}} >></a>
+                <a href="#bottom" id="up">
+                    <span class="material-icons">keyboard_arrow_down</span>
+                </a>
+                <a href="#up" class="down">
+                    <span class="material-icons">keyboard_arrow_up</span>
+                </a>
+            </footer>
+            <div class="space"></div>
+        </aside>
+    </main>
+    <script src="/js/app.js"></script>
+</body>
+</html>
